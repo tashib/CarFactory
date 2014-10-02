@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <input id="carMake" placeholder="Make" />
+    <input id="carModel" placeholder="Model"/>
+    <input id="carColor" placeholder="Color"/>
+    <button onclick="Addcar()" class="btn">Add</button>
+    <button onclick="sortCars()" class="btn">Sort</button>
+    <div id="editDelete"><button class="btn btn-danger" onclick="startDelete();">delete</button></div>
+    <div id="Cardisplay"></div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="editModel" /> Model <br />
+                    <input type="text" id="editMake" /> Make <br />
+                    <input type="text" id="editColor" /> Color <br />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <span id="editSuccessbutton"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Script.js"></script>
+</body>
+</html>
